@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --branco-theme:#F6E8EA;  
+    --vermelho-theme:#EF626C;
+    --marrom-theme:#22181C ;
+    --preto-theme:#312F2F ;
+    --azul-theme:#84DCCF ;
+}
+*{
+    font-family: 'Inter', sans-serif;
+}
+.perfil-foto{
+    width: 200px;
+    border-radius: 100px;
+    border:1px dashed black
+}
+li{
+    list-style: none;
+    
+}
+ .lista-lateral li span{
+display: flex;
+padding: 10px;
+margin-top: 10px;
+justify-content: space-between;
+border-radius: 20px;
+background-color: var(--branco-theme);
+width: 20vw;
+color: var(--preto-theme);
+
+
+
+ }
+.barra-lateral{
+ width: 30%;
+ height: 600px;
+background-color: var(--azul-theme);
+
+}
+
+.main{
+    width:70%;
+    height: 800px;
+    background-color: var(--vermelho-theme);
+}
+ .unselect-text{
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+ }

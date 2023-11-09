@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio</title>
+</head>
+
+<body>
+    <div class="d-flex container-md">
+        <div class="flex-column align-items-center navbar barra-lateral">
+
+            <ul class="d-flex lista-lateral flex-column align-items-center justify-content-between">
+                <li><img class="img-fluid perfil-foto" src="perfil.png"></li>
+                <li><span class="text-dark">Gilberto Santana Campos Junior</span></li>
+                <li><span unselectable="on" id="labelIdade" class="unselect-text text-dark">19 anos</span></li>
+                <li><span class="text-dark">Desenvolvedor</span></li>
+                <li><span class="text-dark"><i class="bi bi-linkedin"></i>/GilbertoCampos</span></li>
+                <li><span class="text-dark"><i class="bi bi-github"></i>/gilj011</span></li>
+                <li><span class="text-dark"><i class="bi bi-whatsapp"></i>Gilberto Campos</span></li>
+            </ul>
+        </div>
+        <div class="d-flex main">
+            <span class="mt-3 mx-auto h2">Portifolio de Projetos</span>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var dataIdade = document.getElementById("labelIdade")
+    var isData = false
+    var idade
+
+    verificarIdade()
+    dataIdade.onclick = function () {
+
+        if (!isData) {
+            isData = true
+            dataIdade.innerHTML = `17/10/2004`
+        } else {
+            isData = false
+            dataIdade.innerHTML = idade + " Anos"
+        }
+    };
+    function verificarIdade() {
+        var dataNascimento = "17-10-2004"
+        var [diaNas, mesNas, anoNas] = dataNascimento.split('-')
+        var aniversario
+        console.log(diaNas, mesNas, anoNas)
+        dataAtual = new Date()
+        diaAtual = dataAtual.getDate()
+        mesAtual = dataAtual.getMonth() + 1
+        anoAtual = dataAtual.getFullYear()
+        console.log("atual ", diaAtual, mesAtual, anoAtual)
+
+            if (mesNas < mesAtual) {
+                aniversario = true
+            } else {
+                aniversario = false
+                if (diaNas < diaAtual) {
+                    aniversario = true
+                } else {
+                    aniversario = false
+                }
+            }
+
+            idade = aniversario ? anoAtual - anoNas : (anoAtual - anoNas) - 1
+            dataIdade.innerHTML = idade + " Anos"
+      
+    }
+</script>
