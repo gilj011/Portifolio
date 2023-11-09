@@ -9,11 +9,40 @@
 *{
     font-family: 'Inter', sans-serif;
 }
-.perfil-foto{
-    width: 200px;
-    border-radius: 100px;
-    border:1px dashed black
+.texto-branco{
+    color: var(--branco-theme);
 }
+.texto-preto{
+    color: var(--preto-theme);
+}
+.texto-vermelho{
+    color: var(--vermelho-theme);
+   
+}
+body{
+    background-color: var(--preto-theme);
+    height: 100%;
+}
+
+.perfil-foto{
+     width: 150px;
+     height: 150px;
+    border-radius: 800px !important;
+    border:1px dashed black;
+}
+.perfil-foto:hover{
+animation: moveToDown 1s  forwards;
+    scale: 1.8;
+    transition: 2s ;
+}
+@keyframes moveToDown {
+    0% {
+      transform: translateY(0px);
+    }
+   100% {
+      transform: translateY(100px);
+    }
+ }
 li{
     list-style: none;
     
@@ -25,23 +54,25 @@ margin-top: 10px;
 justify-content: space-between;
 border-radius: 20px;
 background-color: var(--branco-theme);
-width: 20vw;
+flex-wrap: nowrap;
 color: var(--preto-theme);
-
-
-
+ }
+ .lista-lateral{
+    width: 90%;
+   
+    padding: 0;
  }
 .barra-lateral{
  width: 30%;
- height: 600px;
-background-color: var(--azul-theme);
+ height: 150vh;
+background-color: var(--marrom-theme);
 
 }
 
 .main{
     width:70%;
-    height: 800px;
-    background-color: var(--vermelho-theme);
+    height: 150vh;
+    background-color: var(--branco-theme);
 }
  .unselect-text{
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -51,4 +82,8 @@ background-color: var(--azul-theme);
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
     /* cursor: default; */
+ }
+
+ #labelIdade{
+
  }
