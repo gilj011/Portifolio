@@ -94,3 +94,11 @@ background-color: var(--marrom-theme);
  .animacao{
     animation: moveToUp 1s linear reverse;
  }
+.card-proj{
+    width: 95%;
+}
+.img-card{
+    height: 200px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}

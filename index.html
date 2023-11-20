@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="main" class="d-flex container-md">
+    <div class="d-flex container-md">
         <div class="flex-column align-items-center navbar barra-lateral">
            
             <ul class="d-flex lista-lateral flex-column justify-content-between">
@@ -28,9 +28,27 @@
                 <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-whatsapp"></i>Gilberto Campos</span></li>
             </ul>
         </div>
-        <div class="d-flex main">
-            <span class="texto-preto mt-3 mx-auto h2">Portifólio de Projetos</span>
-
+        <div class="d-flex flex-column main">
+            <span class="text-center texto-preto mt-3 h2">Portifólio de Projetos</span>
+            <div class=" container">
+            <div class="card mx-auto card-proj">
+                <img src="assets/thumbnail.png" class="card-img-top img-card" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>    
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group  list-group-flush">
+                  <li class="list-group-item"><img width="24" height="24" src="assets/icon-python.png">Python</li>
+                  <li class="list-group-item"><img width="24" height="24" src="assets/icon-javascript.png">Javascript</li>
+                  <li class="list-group-item"><img width="24" height="24" src="assets/icon-mysql.png">MySql</li>
+             
+                </ul>
+                <div class="align-items-left card-body d-flex justify-content-between">
+                  <a href="#" class="card-link">Repositório</a>
+                  <a href="#" class="card-link">GitHub</a>
+                </div>  
+                </div>
+              </div>
         </div>
     </div>
 </body>
@@ -58,7 +76,7 @@
         }
     };
     function verificarIdade() {
-        var dataNascimento = "17-10-2004"
+        var dataNascimento = "17-12-2004"
         var [diaNas, mesNas, anoNas] = dataNascimento.split('-')
         var aniversario
         console.log(diaNas, mesNas, anoNas)
