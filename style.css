@@ -83,7 +83,14 @@ background-color: var(--marrom-theme);
     user-select: none;            /* Possível implementação no futuro */
     /* cursor: default; */
  }
-
- #labelIdade{
-
+ @keyframes moveToUp {
+    0% {
+      transform: translateY(0px);
+    }
+   100% {
+      transform: translateY(500px);
+    }
+ }
+ .animacao{
+    animation: moveToUp 1s linear reverse;
  }

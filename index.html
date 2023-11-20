@@ -20,12 +20,12 @@
            
             <ul class="d-flex lista-lateral flex-column justify-content-between">
                 <li><img class="rounded mx-auto d-block  perfil-foto" src="perfil.png"/></li>
-                <li><span class="text-dark">Gilberto Santana Campos Junior</span></li>
-                <li><span unselectable="on" id="labelIdade" class="unselect-text text-dark">19 anos</span></li>
-                <li><span class="text-dark">Desenvolvedor</span></li>
-                <li><span class="text-dark"><i class="texto-vermelho bi bi-linkedin"></i>/GilbertoCampos</span></li>
-                <li><span class="text-dark"><i class="texto-vermelho bi bi-github"></i>/gilj011</span></li>
-                <li><span class="text-dark"><i class="texto-vermelho bi bi-whatsapp"></i>Gilberto Campos</span></li>
+                <li><span class="text-dark animacao">Gilberto Santana Campos Junior</span></li>
+                <li><span id="labelIdade" class="unselect-text text-dark animacao">19 anos</span></li>
+                <li><span class="text-dark animacao">Desenvolvedor</span></li>
+                <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-linkedin"></i>/GilbertoCampos</span></li>
+                <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-github"></i>/gilj011</span></li>
+                <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-whatsapp"></i>Gilberto Campos</span></li>
             </ul>
         </div>
         <div class="d-flex main">
@@ -44,6 +44,7 @@
     var dataIdade = document.getElementById("labelIdade")
     var isData = false
     var idade
+    
 
     verificarIdade()
     dataIdade.onclick = function () {
@@ -73,13 +74,16 @@
                 aniversario = false
                 if (diaNas < diaAtual) {
                     aniversario = true
+                
                 } else {
                     aniversario = false
+                    
                 }
             }
 
             idade = aniversario ? anoAtual - anoNas : (anoAtual - anoNas) - 1
             dataIdade.innerHTML = idade + " Anos"
+           
       
     }
 </script>
