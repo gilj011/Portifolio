@@ -15,40 +15,85 @@
 </head>
 
 <body>
-    <div class="d-flex container-md">
-        <div class="flex-column align-items-center navbar barra-lateral">
-           
+    <div class="d-flex container-lg">
+        <span><i class="bi bi-list"></i></span>
+        <div id="teste" class="flex-column align-items-center navbar barra-lateral">
+
             <ul class="d-flex lista-lateral flex-column justify-content-between">
-                <li><img class="rounded mx-auto d-block  perfil-foto" src="perfil.png"/></li>
+                <li><img class="rounded mx-auto d-block  perfil-foto" src="perfil.png" /></li>
                 <li><span class="text-dark animacao">Gilberto Santana Campos Junior</span></li>
                 <li><span id="labelIdade" class="unselect-text text-dark animacao">19 anos</span></li>
                 <li><span class="text-dark animacao">Desenvolvedor</span></li>
-                <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-linkedin"></i>/GilbertoCampos</span></li>
+                <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-linkedin"></i>/GilbertoCampos</span>
+                </li>
                 <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-github"></i>/gilj011</span></li>
-                <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-whatsapp"></i>Gilberto Campos</span></li>
+                <li><span class="text-dark animacao"><i class="texto-vermelho bi bi-whatsapp"></i>Gilberto Campos</span>
+                </li>
             </ul>
         </div>
-        <div class="d-flex flex-column main">
+        <span></span>
+        <div id="teste2" class="d-flex flex-column main">
+            <span><i onclick="sumir()" style="font-size:50px;position: absolute;" class="bi bi-list"></i></span>
             <span class="text-center texto-preto mt-3 h2">Portifólio de Projetos</span>
             <div class=" container">
-            <div class="card mx-auto card-proj">
-                <img src="assets/thumbnail.png" class="card-img-top img-card" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Web Crawler Ebay</h5>    
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card mx-auto card-proj">
+                    <img src="assets/thumbnail.png" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Crawler Ebay</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group  list-group-flush">
+                        <li class="list-group-item"><img width="24" height="24" src="assets/icon-python.png">Python</li>
+                        <li class="list-group-item"><img width="24" height="24"
+                                src="assets/icon-javascript.png">Javascript</li>
+                        <li class="list-group-item"><img width="24" height="24" src="assets/icon-mysql.png">MySql</li>
+
+                    </ul>
+                    <div class="align-items-left card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Repositório</a>
+                        <a href="#" class="card-link">GitHub</a>
+                    </div>
                 </div>
-                <ul class="list-group  list-group-flush">
-                  <li class="list-group-item"><img width="24" height="24" src="assets/icon-python.png">Python</li>
-                  <li class="list-group-item"><img width="24" height="24" src="assets/icon-javascript.png">Javascript</li>
-                  <li class="list-group-item"><img width="24" height="24" src="assets/icon-mysql.png">MySql</li>
-             
-                </ul>
-                <div class="align-items-left card-body d-flex justify-content-between">
-                  <a href="#" class="card-link">Repositório</a>
-                  <a href="#" class="card-link">GitHub</a>
-                </div>  
+                <div class="card mx-auto card-proj">
+                    <img src="assets/thumbnail.png" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Crawler Ebay</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group  list-group-flush">
+                        <li class="list-group-item"><img width="24" height="24" src="assets/icon-python.png">Python</li>
+                        <li class="list-group-item"><img width="24" height="24"
+                                src="assets/icon-javascript.png">Javascript</li>
+                        <li class="list-group-item"><img width="24" height="24" src="assets/icon-mysql.png">MySql</li>
+
+                    </ul>
+                    <div class="align-items-left card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Repositório</a>
+                        <a href="#" class="card-link">GitHub</a>
+                    </div>
                 </div>
-              </div>
+                <div class="card mx-auto card-proj">
+                    <img src="assets/thumbnail.png" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Crawler Ebay</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group  list-group-flush">
+                        <li class="list-group-item"><img width="24" height="24" src="assets/icon-python.png">Python</li>
+                        <li class="list-group-item"><img width="24" height="24"
+                                src="assets/icon-javascript.png">Javascript</li>
+                        <li class="list-group-item"><img width="24" height="24" src="assets/icon-mysql.png">MySql</li>
+
+                    </ul>
+                    <div class="align-items-left card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Repositório</a>
+                        <a href="#" class="card-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -62,7 +107,7 @@
     var dataIdade = document.getElementById("labelIdade")
     var isData = false
     var idade
-    
+
 
     verificarIdade()
     dataIdade.onclick = function () {
@@ -86,22 +131,45 @@
         anoAtual = dataAtual.getFullYear()
         console.log("atual ", diaAtual, mesAtual, anoAtual)
 
-            if (mesNas < mesAtual) {
+        if (mesNas < mesAtual) {
+            aniversario = true
+        } else {
+            aniversario = false
+            if (diaNas < diaAtual) {
                 aniversario = true
+
             } else {
                 aniversario = false
-                if (diaNas < diaAtual) {
-                    aniversario = true
-                
-                } else {
-                    aniversario = false
-                    
-                }
-            }
 
-            idade = aniversario ? anoAtual - anoNas : (anoAtual - anoNas) - 1
-            dataIdade.innerHTML = idade + " Anos"
+            }
+        }
+
+        idade = aniversario ? anoAtual - anoNas : (anoAtual - anoNas) - 1
+        dataIdade.innerHTML = idade + " Anos"
+
+
+    }
+    function sumir(){
+        
+        if(teste.style.display=='none'){
            
+           
+        
+            teste.style.display = 'flex'
+            teste2.style.width = '70%'
+ 
+           
+           
+        }else{
+   
+            teste.style.display = 'none'
+            teste2.style.width = '100%'
+        }
+     
+   
+        
       
+       
+    
     }
 </script>
