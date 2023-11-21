@@ -73,6 +73,9 @@ background-color: var(--marrom-theme);
 .barra-lateral{
     display: none;
 }
+.main{
+    width: 100% !important;
+}
   }
 
 .main{
